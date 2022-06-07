@@ -1,4 +1,4 @@
-# Mancala
+<!-- # Mancala
 
 Background:
 
@@ -24,4 +24,4 @@ Its smart to make a move that allows the opponent to continue playing. If an opp
 
 Conditions:
 
-The game has ended if a player has captured 25 or more seeds or both players have taken 24 seeds(DRAW). 
+The game has ended if a player has captured 25 or more seeds or both players have taken 24 seeds(DRAW).  -->

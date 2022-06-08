@@ -6,14 +6,68 @@ h1, h2 {
 p {
     font-family: Papyrus, fantasy;
 }
+#table {
+    width: 1250px;
+    margin: 40px auto;
+    border: 2px saddlebrown;
+}
 body {
     font-family: papyrus, fantasy;
     color: peru;
     background-color: saddlebrown;
 }
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
 button {
     background-color: peru;
     color: bisque;
     font-family: Papyrus, fantasy;
-
+    cursor: pointer;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    letter-spacing: 2px;
+    padding-left: 40px;
+}
+main > div {
+    width: 85%;
+    height: 120px;
+}
+#player-1, #player-2 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+#player-2 {
+    align-items: flex-start;
+    padding-top: 10px;
+}
+#col-1, #col-3 {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#col-2 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+#row-1, #row-2 {
+    
 }

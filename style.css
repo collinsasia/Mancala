@@ -1,0 +1,19 @@
+h1, h2 {
+    font-size: 40px;
+    margin: 10px 20px 10px 0;
+    font-family: Papyrus, fantasy;
+}
+p {
+    font-family: Papyrus, fantasy;
+}
+body {
+    font-family: papyrus, fantasy;
+    color: peru;
+    background-color: saddlebrown;
+}
+button {
+    background-color: peru;
+    color: bisque;
+    font-family: Papyrus, fantasy;
+
+}

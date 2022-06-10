@@ -244,7 +244,7 @@ $(() => {
         endIndex = i; // set the index equal to the last hole where a marble was added
       }
     }
-    distributeMancalaMarbles(); // go on to distribute marbles to players's mancalas
+    distributeMancalaMarbles(); // go on to distribute marbles to players's mancalas (Score house)
   }
 
 
@@ -254,7 +254,6 @@ $(() => {
     console.log('firstPlayerMarbles:', firstPlayerMarbles);
     console.log('secondPlayerMarbles:', secondPlayerMarbles);
     if (presentPlayer === 1 && endRow === 1) { // if player 1's last marble is added to their row
-      if ($('.hole-1').eq(endIndex).children('.marble-layer').children().length === 1 && endIndex !== null) { // if the marble layers of the hole that the last marble was added to are empty and it's not the mancala
         for (let i = 0; i < $('.hole-2').eq(endIndex).children('.marble-layer').children().length; i++) {
           checkMarbleLayers(endIndex, '#row-1');
           firstPlayerMarbles++; // increase player 1's total marbles
@@ -262,11 +261,10 @@ $(() => {
           console.log('firstPlayerMarbles:', firstPlayerMarbles);
           console.log('secondPlayerMarbles:', secondPlayerMarbles);
         }
-        $('.hole-2').eq(endIndex).children('.marble-layer').remove(); // remove all marbles from player 2's adjacent hole
+     
       }
       disablePlayer2(); // they get to go again so disable player 2's row
     } else if (presentPlayer === 2 && endRow === 2) { // if player 2's last marble is added to their row
-      if ($('.hole-2').eq(endIndex).children('.marble-layer').children().length === 1 && endIndex !== null) { // if the hole that the last marble was added to was empty and it's not the mancala
         for (let i = 0; i < $('.hole-1').eq(endIndex).children('.marble-layer').children().length; i++) {
           checkMarbleLayers(endIndex, '#row-2');
           secondPlayerMarbles++; // increase player 2's total marbles

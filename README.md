@@ -1,6 +1,9 @@
 <!-- # Mancala
 
+
+images/oware.png
 /Users/asiacollins/Desktop/oware copy/images/brownmarble.jpeg
+
 
 Background:
 
@@ -13,16 +16,17 @@ Equipment & Description
 - 12 slots
 - six houses / each side
 - "Score House"
-Most oware boards have two sides to them and a "score house at each end. 
-![Optional Text](../images.jpg)
+Most oware boards have two sides to
+ them and a "score house at each end.
+
 
 Obective:
 
 In each house there are four seeds from the start of the game. The objective in winning is to obtain more seed than your opponent. As there are an even amount of seeds, it is possible for the game to end in a ddraw or sufficient enough to have a winner with at least 25 seeds.
-    On each turn, a player chooses one of the six houses under their control. All seeds within that house should be distributed one by one, counter-clockwise from the selected house; "Sowing seeds". However seeds are not distributed into the either of the score houseswhen sowing. 
-Note: If a house has 12 seeds or more it must be placed in that player's score house. 
+    On each turn, a player chooses one of the six houses under their control. All seeds within that house should be distributed one by one, counter-clockwise from the selected house; "Sowing seeds". However seeds are not distributed into the either of the score houseswhen sowing.
+Note: If a house has 12 seeds or more it must be placed in that player's score house.
 
-Its smart to make a move that allows the opponent to continue playing. If an opponents house are all empty the current player must make a move that gives the opponent seeds. If that move is inpossible then the current player has captured majority of the seeds and they have WON. 
+Its smart to make a move that allows the opponent to continue playing. If an opponents house are all empty the current player must make a move that gives the opponent seeds. If that move is inpossible then the current player has captured majority of the seeds and they have WON.
 
 Conditions:
 

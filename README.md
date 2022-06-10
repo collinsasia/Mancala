@@ -17,7 +17,21 @@ Most oware boards have two sides to
  them and a "score house at each end.
 
 
-Obective:
+Source:
+
+Devloping and creating my personal Oware/Mancala board was extremely difficult. As someone who is fairly new to SE utilized a skills that they already know; Research. By researching other examples and guidlines , I was able to at least able to understand the fundamentals. I tried my best to avoid the typical board or outline at least but still needed guidance. Below are my helpful sources.
+
+How to code Mancala: https://github.com/phillippelevidad/mancala-js
+
+Project game - awari: https://stackoverflow.com/questions/23462096/project-for-the-game-oware
+
+CodePen: https://codepen.io/elegantlytragic/pen/PqObLz
+
+
+
+
+
+Obective/Pseudocode:
 
 In each house there are four seeds from the start of the game. The objective in winning is to obtain more seed than your opponent. As there are an even amount of seeds, it is possible for the game to end in a ddraw or sufficient enough to have a winner with at least 25 seeds.
     On each turn, a player chooses one of the six houses under their control. All seeds within that house should be distributed one by one, counter-clockwise from the selected house; "Sowing seeds". However seeds are not distributed into the either of the score houseswhen sowing.
@@ -28,6 +42,16 @@ Its smart to make a move that allows the opponent to continue playing. If an opp
 Conditions:
 
 The game has ended if a player has captured 25 or more seeds or both players have taken 24 seeds(DRAW).  -->
+
+**Pseudocode**
+
+Make sure that you have all equipment that contribute to your board
+The amount of Marbles in each "House"
+The Total amount of marbles 
+
+When going first:
+Select House counter-Clockwise
+The marbles should move around the board until it reaches the "score house"
 
 
 <!-- # Mancala

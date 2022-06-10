@@ -49,9 +49,13 @@ Make sure that you have all equipment that contribute to your board
 The amount of Marbles in each "House"
 The Total amount of marbles 
 
-When going first:
-Select House counter-Clockwise
-The marbles should move around the board until it reaches the "score house"
+ When going first:
+  Select House counter-Clockwise
+   The marbles should move around the board until it reaches the "score house"
+     Go to the next house if the hole is empty to continue game
+       If you dont have any marbles to play with continue , Else count who has the most marbles
+         Who every have the most NKONIM!(Victory)
+
 
 
 <!-- # Mancala

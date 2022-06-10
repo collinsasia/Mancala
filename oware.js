@@ -11,14 +11,7 @@ $(() => {
   let endRow = undefined;
 
   // Pre-canned marble colors
-  const marbleColors = [
-    ['#e54ed0, #ff72ff'],
-    ['#b106df, #06dfb1'],
-    ['#1e48e2, #060e2d'],
-    ['#42e100, #f6ff6a'],
-    ['#fab340, #fe8787'],
-    ['#b400a2, #9e0031']
-  ]
+ 
 
 
   const setVariables = (event) => { 
@@ -399,11 +392,11 @@ $(() => {
 
   // Event listeners ===========================================
 
-  $('#start-over').on('click', newRound); // begin a new round when the "Start Over" button is clicked
-  $('#instructions-button').on('click', () => { // open up the "How to Play" modal window when that button is clicked
+  $('#start-over').on('click', newRound); // restart board when press start over
+  $('#instructions-button').on('click', () => { // pop open "how to play" when clicked
     $('#instructions-modal').css('visibility', 'visible');
   });
-  $('#close-button').children().on('click', () => { // close the "How to Play" modal window when the "Close" button is clicked
+  $('#close-button').children().on('click', () => { // close the "How to Play" when pressing the X
     $('#instructions-modal').css('visibility', 'hidden');
   });
 

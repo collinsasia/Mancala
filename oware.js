@@ -164,14 +164,14 @@ $(() => {
 
 
 
-  const distributeOpponentRowMarbles = () => { // function to distribute marbles along the opponent's row
+  const distributeOpponentRowMarbles = () => { // distribute on opponents row
     console.log('=== distributeOpponentRowMarbles ===');
     console.log('numMarbles:', numMarbles);
-    let limit = null; // create a variable to store the for loop iteration limit
+    let limit = null; //loop for iteration limit
     if (numMarbles > 0 && presentPlayer === 1) { // if player 1 still has marbles to distribute
       endRow = 2; // the endIndex will be in player 2's row of holes
       if (6 < numMarbles) { // if there are less holes to distribute marbles to, than marbles themselves
-        limit = 6; // only distribute the number of marbles that match the number of holes, hold the rest
+        limit = 6; // 6 marbles for 6 holes limit
       } else {
         limit = numMarbles;
       }
@@ -202,19 +202,18 @@ $(() => {
         endIndex = i; // set the index equal to the last hole where a marble was added
       }
       distributePlayerRowMarbles();
-    } else { // there are no more marbles left to distribute
-      determineNextPlayer(); // go on to determine what player should go next
+    } else { // no ramaining marbles
+      determineNextPlayer(); // who goes next
     }
   }
 
 
-  const distributePlayerRowMarbles = () => { // function to distribute marbles along the player's row
+  const distributePlayerRowMarbles = () => { // distributes on players row 
     console.log('=== distributePlayerRowMarbles ===');
     console.log('numMarbles:', numMarbles);
-    let limit = null; // create a variable to store the for loop iteration limit
-    if (numMarbles > 0 && presentPlayer === 1) { // when the hole is in player 1's row
+    let limit = null; //  loop iteration limit
+    if (numMarbles > 0 && presentPlayer === 1) { // player 1's row
       endRow = 1; // the endIndex will be in player 1's row of holes
-      if (6 < numMarbles) { // if there are less holes to distribute marbles to, than marbles themselves
         limit = 0; // only distribute the number of marbles that match the number of holes, hold the rest
       } else {
         limit = 6 - numMarbles;

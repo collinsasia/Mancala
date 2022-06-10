@@ -21,15 +21,14 @@ $(() => {
   ]
 
 
-  const setVariables = (event) => { // Setting up game logic for a single play
+  const setVariables = (event) => { 
     console.log('=== setVariables  ===');
-    const $hole = $(event.currentTarget); // create variable to store the hole that was clicked
-    numMarbles = $hole.children().children().length; // store the number of marbles in the selected hole
+    const $hole = $(event.currentTarget); // variable for clicked hole
+    numMarbles = $hole.children().children().length; // stored number of marbles in selected hole
     console.log('numMarbles:', numMarbles);
-    startIndex = $hole.index(); // set the index equal to the location of the selected hole
-    console.log('startIndex:', startIndex);
+    
     if ($hole.hasClass('hole-1')) {
-      firstPlayerMarbles -= numMarbles; // reduce the number of marbles by the amount grabbed
+      firstPlayerMarbles -= numMarbles; // subracting by 1 that 
     } else {
       secondPlayerMarbles -= numMarbles; // reduce the number of marbles by the amount grabbed
     }
@@ -42,9 +41,9 @@ $(() => {
 
   const removeMarbles = (event) => {
     console.log('removeMarbles');
-    const $hole = $(event.currentTarget); // create variable to store the hole that was clicked
-    $hole.children('.marble-layer').remove(); // remove the marbles from the selected hole
-    distributeInitialPlayerRowMarbles(); // go on to distribute the marbles from the selected hole
+    const $hole = $(event.currentTarget); // storing selected hole
+    $hole.children('.marble-layer').remove(); // remove marbles from selected hole
+    distributeInitialPlayerRowMarbles(); //distribute starting from selected hole
   }
 
 
@@ -95,22 +94,14 @@ $(() => {
       $(row).children().eq(i).append($marbleLayer);
       checkMarbleLayers(i, row);
     } else {
-      checkLastLayer(numMarbleLayers, i, row); // pass the number of layers to checkLastLayer function
+      checkLastLayer(numMarbleLayers, i, row); 
     }
   }
 
-
-  const checkLastLayer = (numMarbleLayers, i, row) => {
-    const numLastLayerMarbles = $(row).children().eq(i).children('.marble-layer').eq(numMarbleLayers - 1).children().length;
-    console.log('numLastLayerMarbles', numLastLayerMarbles);
-    createMarbleLayers(numMarbleLayers, numLastLayerMarbles, i, row); // pass the number of marbles in the last layer to createMarbleLayers function
-  }
-
-
   const createMarbleLayers = (numMarbleLayers, numLastLayerMarbles, i, row) => {
     const $marble = $('<div>').addClass('marble').css('background', randomMarbleColor(marbleColors)); // create a marble
-    if (numLastLayerMarbles < 5) { // check if the last marble layer has less than 5 marbles
-      $(row).children().eq(i).children('.marble-layer').eq(numMarbleLayers - 1).append($marble); //add marble to that marble layer
+    if (numLastLayerMarbles < 5) { // if less than 5 marbles
+      $(row).children().eq(i).children('.marble-layer').eq(numMarbleLayers - 1).append($marble); //adding marble to marble layer
       console.log('marble appended');
     } else {
       const $marbleLayer = $('<div>').addClass('marble-layer').css('transform', randomRotate()); // create a new marble layer
@@ -135,13 +126,12 @@ $(() => {
 
 
   // === Moving marbles =====================================
-  const distributeInitialPlayerRowMarbles = () => { // function to distribute marbles along the player's row based on hole selected
+  const distributeInitialPlayerRowMarbles = () => { // marbles ditribuuted on players side from selected hole
     console.log('=== distributeInitialPlayerRowMarbles ===');
     console.log('numMarbles:', numMarbles);
-    let limit = null; // create a variable to store the for loop iteration limit
-    if (presentPlayer === 1) { // when the hole is in player 1's row
+    let limit = null; //loop for iteration limit
+    if (presentPlayer === 1) { // Player 1 row
       endRow = 1; // the endIndex will be in player 1's row of holes
-      if (startIndex <= numMarbles) { // if there are less holes to distribute marbles to, than marbles themselves
         limit = 0; // only distribute the number of marbles that match the number of holes, hold the rest
       } else {
         limit = startIndex - numMarbles;

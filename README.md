@@ -2,6 +2,8 @@
 # Mancala
 Oware
 
+http://127.0.0.1:5500/index.html
+
 Background:
 
 Oware is the strategy game among the mancala game family. This game is played in various regions in Ghana and translate as "He She Marries". It is believed that this game is to be the result of a wedding between two after attending social events and gatherings among the Asanti people. It is also used in educational value for mathematical development.

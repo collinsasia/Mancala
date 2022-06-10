@@ -139,9 +139,8 @@ $(() => {
       for (let i = startIndex - 1; i >= limit; i--) {
         checkMarbleLayers(i, '#row-1');
         firstPlayerMarbles++; // increase player 1's total marbles by 1
-        numMarbles--; //decrease the marbles to distribute
+        numMarbles--; /decrease distributed marbles
         console.log('numMarbles:', numMarbles);
-        endIndex = i; // set the index equal to the last hole where a marble was added
       }
     } else { // when the hole is in player 2's row
       endRow = 2; // the endIndex will be in player 2's row of holes

@@ -10,9 +10,6 @@ $(() => {
   let endIndex = undefined; 
   let endRow = undefined;
 
-  // Pre-canned marble colors
- 
-
 
   const setVariables = (event) => { 
     console.log('=== setVariables  ===');

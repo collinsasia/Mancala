@@ -21,7 +21,7 @@ Most oware boards have two sides to
 
 Source:
 
-Devloping and creating my personal Oware/Mancala board was extremely difficult. As someone who is fairly new to SE utilized a skills that they already know; Research. By researching other examples and guidlines , I was able to at least able to understand the fundamentals. I tried my best to avoid the typical board or outline at least but still needed guidance. Below are my helpful sources.
+Devloping and creating my personal Oware/Mancala board was extremely difficult. As someone who is fairly new to SE utilized a skills that they already know; Research. By researching other examples and guidlines, applying some to little bits of jquery ultimately I was able to at least able to understand the fundamentals. I tried my best to avoid the typical board or outline at least but still needed guidance. Below are my helpful sources.
 
 How to code Mancala: https://github.com/phillippelevidad/mancala-js
 

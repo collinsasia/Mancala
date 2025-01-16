@@ -23,7 +23,7 @@ $(() => {
   let startIndex = null;
 
   // Tracks the location of the hole where the last marble was added
-  let endIndex = null;
+  
 
   // Tracks the row of th hole where the last marble was added
   let endRow = null;
